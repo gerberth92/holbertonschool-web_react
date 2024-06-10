@@ -21,7 +21,19 @@ const student2: Student = {
 
 const studentsList: Student[] = [student1, student2];
 
-for (const estudiante of studentsList) {
-  const li: HTMLElement = document.createElement('li');
-  li.textContent = estudiante.firstName + estudiante.location;
+const table = document.createElement('table');
+const tbody = document.createElement('tbody');
+
+for (const e of studentsList) {
+  const row = document.createElement('tr');
+  const celda1 = document.createElement('td');
+  celda1.textContent = e.firstName;
+  const celda2 = document.createElement('td');
+  celda2.textContent = e.location;
+  row.appendChild(celda1);
+  row.appendChild(celda2);
+  tbody.appendChild(row);
 }
+table.appendChild(tbody);
+
+document.body.appendChild(table);
