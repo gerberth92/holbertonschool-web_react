@@ -1,0 +1,27 @@
+interface Student {
+  firstName: string;
+  lastName: string;
+  age: number;
+  location: string;
+}
+
+const student1: Student = {
+  firstName: '',
+  lastName: '',
+  age: 0,
+  location: '',
+};
+
+const student2: Student = {
+  firstName: '',
+  lastName: '',
+  age: 0,
+  location: '',
+};
+
+const studentsList: Student[] = [student1, student2];
+
+for (const estudiante of studentsList) {
+  const li: HTMLElement = document.createElement('li');
+  li.textContent = estudiante.firstName + estudiante.location;
+}
