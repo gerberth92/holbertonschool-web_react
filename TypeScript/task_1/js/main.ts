@@ -37,11 +37,11 @@ class StudentClass implements clase {
     this.lastName = lastName;
   }
 
-  workOnHomework() {
+  workOnHomework(): string {
     return 'Currently working';
   }
 
-  displayName() {
+  displayName(): string {
     return this.firstName;
   }
 }
