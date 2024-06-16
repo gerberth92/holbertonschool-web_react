@@ -1,7 +1,8 @@
 .Notifications {
   position: relative;
-  border: auto;
-  padding: auto;
+  border: 5px;
+  padding: 5px;
+  border: 2px dashed red;
 }
 
 li[data-priority='default'] {
