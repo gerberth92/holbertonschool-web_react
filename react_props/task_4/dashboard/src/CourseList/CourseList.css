@@ -1,0 +1,15 @@
+#CourseList {
+  flex: 1;
+  margin: 30px 90px;
+  border-left: solid grey;
+  border-right: solid grey;
+}
+
+th {
+  border-top: solid grey;
+  border-bottom: solid grey;
+}
+
+td {
+  border-bottom: solid grey;
+}
